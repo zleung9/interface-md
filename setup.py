@@ -15,9 +15,9 @@ requirements = ['Click>=7.0', ]
 test_requirements = ['pytest>=3', ]
 
 setup(
-    author="Zhu Liang",
-    author_email='zhul9311@gmail.com',
-    python_requires='>=3.6',
+    author="Zhu Liang, Trung Vo",
+    author_email='zhul9311@gmail.com, bvo4@uic.edu',
+    python_requires='>=3.7',
     classifiers=[
         'Development Status :: 2 - Pre-Alpha',
         'Intended Audience :: Developers',
@@ -31,19 +31,19 @@ setup(
     description="A collection of python modules and functions for interface MD simulations",
     entry_points={
         'console_scripts': [
-            'interface_md=interface_md.cli:main',
+            'interface-md=interface-md.cli:main',
         ],
     },
     install_requires=requirements,
     license="MIT license",
     long_description=readme + '\n\n' + history,
     include_package_data=True,
-    keywords='interface_md',
-    name='interface_md',
-    packages=find_packages(include=['interface_md', 'interface_md.*']),
+    keywords='interface-md',
+    name='interface-md',
+    packages=find_packages(include=['interface-md', 'interface-md.*']),
     test_suite='tests',
     tests_require=test_requirements,
-    url='https://github.com/zhul9311/interface_md',
+    url='https://github.com/zhul9311/interface-md',
     version='0.1.0',
     zip_safe=False,
 )
